@@ -726,9 +726,9 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(() => {
-                        console.log('SUCCESS!');
+                        alert('Email sented successfully');
                     }, (error) => {
-                        console.log('FAILED...', error);
+                        alert('Email not sent', error);
                     });
             });
         }
